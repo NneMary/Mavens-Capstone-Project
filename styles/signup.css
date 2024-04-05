@@ -69,6 +69,25 @@
   cursor: pointer;
 }
 
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.login-btn input {
+  width: fit-content !important;
+  padding: 1rem 3rem !important;
+  margin-top: 0 !important;
+}
+
+.login-btn p {
+  color: #db4444 !important;
+  margin-top: 0 !important;
+}
+
 /* Footer */
 footer {
   background-color: #db4444;
