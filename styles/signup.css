@@ -1,0 +1,256 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+}
+
+#header {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+#logo {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#logo span {
+    color: #DB4444;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1a1a1ad0;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #DB4444;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 34%;
+    height: 2px;
+    background: #DB4444;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar button {
+    border: 1px solid rgba(231, 228, 228, 0.744);
+    padding: 10px 18px;
+    background: none;
+    margin-left: 90px;
+    border-radius: 10px;
+    width: 45%;
+
+}
+
+#navbar button input {
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: #1a1a1ad0;
+}
+
+#navbar button i {
+    color: #1a1a1ad0;
+    font-size: 20px;
+}
+
+#navbar .fa-heart {
+    font-size: 22px;
+    color: #1a1a1ad0;
+    margin-left: 30px;
+}
+
+#navbar a svg {
+    fill: #1a1a1ad0;
+    width: 28px;
+}
+
+hr {
+    margin: 15px 0 30px 0;
+}
+
+/* HEADER STYLING ENDS HERE */
+
+.signup-main {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 5rem;
+  }
+  
+  .signup-img {
+    width: 805px;
+  }
+  
+  .signup-img img {
+    width: 100%;
+  }
+  
+  .signup-form > input {
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-bottom: 1px solid;
+    width: 100%;
+  }
+  
+  .signup-form-div {
+    height: fit-content;
+    margin: auto 0;
+  }
+  
+  .signup-form-div p {
+    margin-top: 10px;
+  }
+  
+  .signup-form-div button {
+    padding: 16px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+  }
+  
+  .signup-form h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  
+  .signup-form input[type="submit"] {
+    width: 100%;
+    background-color: #db4444;
+    color: white;
+    border: none;
+    padding: 16px;
+    margin-top: 2rem;
+    border-radius: 4px;
+  }
+  
+  .signup-prompt {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .signup-prompt a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .login-btn input {
+    width: fit-content !important;
+    padding: 1rem 3rem !important;
+    margin-top: 0 !important;
+  }
+  
+  .login-btn p {
+    color: #db4444 !important;
+    margin-top: 0 !important;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #db4444;
+    padding: 5rem 5rem 1rem 5rem;
+    color: white;
+  }
+  
+  footer > section {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .footer-input {
+    position: relative;
+  }
+  
+  .footer-input span {
+    position: absolute;
+    right: 0.5rem;
+    top: 8px;
+    cursor: pointer;
+  }
+  
+  .footer-input input {
+    padding: 0.7rem;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  
+  .footer-download {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .footer-download img {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0.5;
+  }
+  
