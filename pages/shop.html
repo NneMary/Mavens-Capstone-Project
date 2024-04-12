@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce web application</title>
+    <link rel="stylesheet" href="../styles/shop.css">
+    <script src="https://kit.fontawesome.com/2f178f11e5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="header">
+        <a href="#" id="logo"> <span>Ella </span>Business <br> Venture</a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./shop.html" class="active">Shop</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+                <button>
+                    <input type="text" placeholder="What are you looking for?">
+                    <i class="fa-solid fa-magnifying-glass"></i>   
+                </button>
+                <li><a href="./pages/wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="./pages/cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"></path></svg></a></li>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+                <li><a href="../pages/signup.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M229.19,213c-15.81-27.32-40.63-46.49-69.47-54.62a70,70,0,1,0-63.44,0C67.44,166.5,42.62,185.67,26.81,213a6,6,0,1,0,10.38,6C56.4,185.81,90.34,166,128,166s71.6,19.81,90.81,53a6,6,0,1,0,10.38-6ZM70,96a58,58,0,1,1,58,58A58.07,58.07,0,0,1,70,96Z"></path></svg></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+      <!-- HEADER SECTION ENDS HERE.......... -->
+
+    <section id="category">
+        <div class="square">
+            <i class="fa-solid fa-square"></i>
+            <h4>Categories</h4>
+        </div>
+
+        <h4 class="browse">Browse By Categories</h4>
+
+        <div class="category-section">
+            <div id="kitchen-wares" class="wares">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M90,48V16a6,6,0,0,1,12,0V48a6,6,0,0,1-12,0Zm38,6a6,6,0,0,0,6-6V16a6,6,0,0,0-12,0V48A6,6,0,0,0,128,54Zm32,0a6,6,0,0,0,6-6V16a6,6,0,0,0-12,0V48A6,6,0,0,0,160,54Zm91.6,46.8L222,123v61a30,30,0,0,1-30,30H64a30,30,0,0,1-30-30V123L4.4,100.8a6,6,0,0,1,7.2-9.6L34,108V88A14,14,0,0,1,48,74H208a14,14,0,0,1,14,14v20l22.4-16.8a6,6,0,0,1,7.2,9.6ZM210,88a2,2,0,0,0-2-2H48a2,2,0,0,0-2,2v96a18,18,0,0,0,18,18H192a18,18,0,0,0,18-18Z"></path></svg>
+                <h5>Kitchen Wares</h5>
+            </div>
+
+            <div id="kitchen-essentials" class="wares">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M240,194H230V56a14,14,0,0,0-14-14H40A14,14,0,0,0,26,56V194H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM38,56a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2V194H198V168a6,6,0,0,0-6-6H120a6,6,0,0,0-6,6v26H70V86H186v50a6,6,0,0,0,12,0V80a6,6,0,0,0-6-6H64a6,6,0,0,0-6,6V194H38ZM186,194H126V174h60Z"></path></svg>
+                <h5>Kitchen Essentials</h5>
+            </div>
+
+            <div id="household-items" class="wares">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M240,210H222V115.55a14.06,14.06,0,0,0-4.53-10.32l-80-75.49-.09-.08a13.94,13.94,0,0,0-18.83,0l-.09.08-80,75.5A14,14,0,0,0,34,115.55V210H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM46,115.55a2,2,0,0,1,.65-1.48l.09-.08,79.94-75.48a2,2,0,0,1,2.63,0L209.26,114l.08.08a2,2,0,0,1,.66,1.48V210H158V160a14,14,0,0,0-14-14H112a14,14,0,0,0-14,14v50H46ZM146,210H110V160a2,2,0,0,1,2-2h32a2,2,0,0,1,2,2Z"></path></svg>
+                <h5>Household Items</h5>
+            </div>
+
+            <div id="gift-items" class="wares">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,74H174.74a46.41,46.41,0,0,0,6-4.48,27.56,27.56,0,0,0,9.22-20A30.63,30.63,0,0,0,158.5,18a27.56,27.56,0,0,0-20,9.22A57.1,57.1,0,0,0,128,45.76a57.1,57.1,0,0,0-10.48-18.53A27.56,27.56,0,0,0,97.5,18,30.63,30.63,0,0,0,66,49.51a27.56,27.56,0,0,0,9.22,20,45.74,45.74,0,0,0,6,4.48H40A14,14,0,0,0,26,88v32a14,14,0,0,0,14,14h2v66a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V134h2a14,14,0,0,0,14-14V88A14,14,0,0,0,216,74ZM135.77,63c2.25-12.12,6.29-21.75,11.69-27.85A15.68,15.68,0,0,1,158.86,30h.55A18.6,18.6,0,0,1,178,49.14a15.68,15.68,0,0,1-5.18,11.4C162.1,70,143.92,72.83,134.34,73.65,134.59,70.76,135,67.08,135.77,63ZM83.45,35.45A18.69,18.69,0,0,1,96.59,30h.55a15.68,15.68,0,0,1,11.4,5.18C118,45.9,120.83,64.08,121.65,73.66c-2.89-.25-6.57-.68-10.61-1.43C98.92,70,89.29,65.94,83.19,60.53A15.64,15.64,0,0,1,78,49.14,18.65,18.65,0,0,1,83.45,35.45ZM38,120V88a2,2,0,0,1,2-2h82v36H40A2,2,0,0,1,38,120Zm16,80V134h68v68H56A2,2,0,0,1,54,200Zm148,0a2,2,0,0,1-2,2H134V134h68Zm16-80a2,2,0,0,1-2,2H134V86h82a2,2,0,0,1,2,2Z"></path></svg>
+                <h5>Gift Items</h5>
+            </div>
+
+            <div id="personal-items" class="wares">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M102,88v96a6,6,0,0,1-12,0V88a6,6,0,0,1,12,0Zm26-6a6,6,0,0,0-6,6v96a6,6,0,0,0,12,0V88A6,6,0,0,0,128,82Zm32,0a6,6,0,0,0-6,6v96a6,6,0,0,0,12,0V88A6,6,0,0,0,160,82Zm46-18V208a14,14,0,0,1-14,14H174v18a6,6,0,0,1-12,0V222H94v18a6,6,0,0,1-12,0V222H64a14,14,0,0,1-14-14V64A14,14,0,0,1,64,50H90V24A22,22,0,0,1,112,2h32a22,22,0,0,1,22,22V50h26A14,14,0,0,1,206,64ZM102,50h52V24a10,10,0,0,0-10-10H112a10,10,0,0,0-10,10Zm92,14a2,2,0,0,0-2-2H64a2,2,0,0,0-2,2V208a2,2,0,0,0,2,2H192a2,2,0,0,0,2-2Z"></path></svg>
+                <h5>Personal Items</h5>
+            </div>
+
+            <div id="Dining" class="wares">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M74,88V40a6,6,0,0,1,12,0V88a6,6,0,0,1-12,0ZM214,40V224a6,6,0,0,1-12,0V174H152a6,6,0,0,1-6-6c0-4.41.68-108.25,59.64-133.51A6,6,0,0,1,214,40ZM202,50c-36.79,24.29-42.82,91.48-43.81,112H202ZM117.92,39a6,6,0,1,0-11.84,2L114,88.48a34,34,0,0,1-68,0L53.92,41a6,6,0,0,0-11.84-2l-8,48A6.61,6.61,0,0,0,34,88a46.06,46.06,0,0,0,40,45.6V224a6,6,0,0,0,12,0V133.6A46.06,46.06,0,0,0,126,88a6.61,6.61,0,0,0-.08-1Z"></path></svg>
+                <h5>Dining</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- BROWSE CATEGORY SECTION ENDS HERE -->
+
+    <section id="product1">
+        <div id="product-sets">
+            <h4>Explore Our Kitchen Wares</h4>
+            <div class="pro-container">
+                <div class="pro">
+                    <div class="img-discount">
+                        <div class="discount-new">
+                            <div>
+                                -30%
+                            </div>
+                            <button><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <img class="img-1" src="../images/spoons.png" alt="">
+                    </div>
+                    <div class="description">
+                        <h5>Wood and Rubber Cook Set</h5>
+                        <p>$80 <span><s>$90</s></span></p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(75)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="img-discount">
+                        <div class="discount-new">
+                            <div>
+                                -30%
+                            </div>
+                            <button><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <img class="img-2" src="../images/wooden spoon.png" alt="">
+                    </div>
+                    <div class="description">
+                        <h5>Wood and Rubber Cook Set</h5>
+                        <p>$80 <span><s>$90</s></span></p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(75)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="img-discount">
+                        <div class="discount-new">
+                            <div>
+                                -20%
+                            </div>
+                            <button><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <img class="img-3" src="../images/wooden spoon set.png" alt="">
+                    </div>
+                    <div class="description">
+                        <h5>Wood and Rubber Cook Set</h5>
+                        <p>$80 <span><s>$90</s></span></p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(75)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="img-discount">
+                        <div class="discount-new">
+                            <div class="new">
+                                New
+                            </div>
+                            <button><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <img class="img-4" src="../images/non-stick blue spoon.png" alt="">
+                    </div>
+                    <div class="description">
+                        <h5>Wood and Rubber Cook Set</h5>
+                        <p>$80 <span><s>$90</s></span></p>
+                        <div class="star white">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(0)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="img-discount">
+                        <div class="discount-new">
+                            <div>
+                                -45%
+                            </div>
+                            <button><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <img class="img-5" src="../images/set of cooking spoons.png" alt="">
+                    </div>
+                    <div class="description">
+                        <h5>Wood and Rubber Cook Set</h5>
+                        <p>$80 <span><s>$90</s></span></p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(75)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="img-discount">
+                        <div class="discount-new">
+                            <div class="new">
+                                New
+                            </div>
+                            <button><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <img class="img-6" src="../images/green soup plate.png" alt="">
+                    </div>
+                    <div class="description">
+                        <h5>Wood and Rubber Cook Set</h5>
+                        <p>$80 <span><s>$90</s></span></p>
+                        <div class="star white">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(0)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="img-discount">
+                        <div class="discount-new">
+                            <div>
+                                -32%
+                            </div>
+                            <button><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <img class="img-7" src="../images/gold and white dine set.png" alt="">
+                    </div>
+                    <div class="description">
+                        <h5>Wood and Rubber Cook Set</h5>
+                        <p>$80 <span><s>$90</s></span></p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(105)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="img-discount">
+                        <div class="discount-new">
+                            <div>
+                                -22%
+                            </div>
+                            <button><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <img class="img-8" src="../images/white dining plates.png" alt="">
+                    </div>
+                    <div class="description">
+                        <h5>Wood and Rubber Cook Set</h5>
+                        <p>$80 <span><s>$90</s></span></p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(15)</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="view-more-btn">
+        <div>
+            <h3>More Products in this category</h3>
+            <button>See All</button>
+        </div>
+    </section>
+
+    <!-- VIEW MORE SECTION STARTS HERE -->
+
+    <section class="view-more-sec">
+        <div class="flex-container">
+            <div class="more-products">
+                <img src="../images/4 set of pots.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>On Discount</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>4 Sets Pots</h5>
+                    <p>$60 <span class="strik"><s>$80</s></span></p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(56)</span>
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="more-products">
+                <img src="../images/7 set of pots.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>Just in</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>7 Sets Pots</h5>
+                    <p>$100 <span class="strik"><s>$120</s></span></p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(60)</span>
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="more-products">
+                <img src="../images/single non-stick pot.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>Just in</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>Single Non-Stick Pot</h5>
+                    <p>$80 <span class="strik"><s>$90</s></span></p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span> (75)</span>
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="more-products">
+                <img src="../images/single transparent pot.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>On Discount</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>Single Transparent Pot</h5>
+                    <p>$105<span class="strik"><s>$125</s></span></p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(35)</span>
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="more-products">
+                <img src="../images/shiny black pot.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>On Discount</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>Shiny Black Pot</h5>
+                    <p>$80 <span class="strik"><s>$90</s></span></p>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (0)
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="more-products">
+                <img src="../images/colorful plate sets.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>On Discount</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>Colorful Plate Sets</h5>
+                    <p>$30 <span class="strik"><s>$50</s></span></p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(22)</span>
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-products">
+                <img src="../images/white smeared.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>On Discount</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>White Smeared Plates</h5>
+                    <p>$50 <span class="strik"><s>$70</s></span></p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-products">
+                <img src="../images/white dining plates.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>On Discount</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>White Dining Plates</h5>
+                    <p>$55 <span class="strik"><s>$70</s></span></p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(17)</span>
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="more-products">
+                <img src="../images/gold and white dine set.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>Discount</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>Gold and White Dine Sets</h5>
+                    <p>$80 <span class="strik"><s>$90</s></span></p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(104)</span>
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-products">
+                <img src="../images/green soup plate.png" alt="">
+                <div class="pro-des">
+                    <div class="dis-whish">
+                        <span>Just in</span>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h5>Green Soup Plates</h5>
+                    <p>$25</p>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(0)</span>
+                    </div>
+                    <div class="more-btn">
+                        <button id="more-details">More Details</button>
+                        <button id="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-category">
+                <p class="section-category-p">Featured</p>
+            </div>
+            <div class="section-header">
+                <h3 class="section-title">New Arrivals</h3>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item-1 item">
+                    <img src="../images/gift collections.png" alt="" class="gallery-item-img1">
+                    <div class="gallery-title1">
+                        
+                    </div> 
+                </div>
+                <div class="gallery-item-2 item">
+                    <div class="gallery-title2">
+                        <h4>Kitchen Collections</h4>
+                        <p>Featured kitchen wares that gives you another vibe.</p>
+                        <button>Show More</button>
+                    </div>
+                    <img src="../images/gold and white dine set.png" alt="" class="gallery-item-img">
+                </div>
+                <div class="gallery-item-3 item">
+                    <img src="../images/oven.png" alt="" class="gallery-item-img3">
+                    <div class="gallery-title3"></div>
+                </div>
+                <div class="gallery-item-4 item">
+                    <img src="../images/soft towel.png" alt="" class="gallery-item-img4">
+                    <div class="gallery-title4"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
