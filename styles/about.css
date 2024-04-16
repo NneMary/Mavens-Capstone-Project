@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1rem;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 0.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  text-align: center;
+}
+
+.number {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 1.2em;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.member {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.member p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.box {
+  flex-basis: calc(33.333% - 20px);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  color: #666;
+}
+
+.free-delivery {
+  background-color: #6cbe46;
+  color: #fff;
+}
+
+.customer-service {
+  background-color: #4a86e8;
+  color: #fff;
+}
+
+.money-back-guarantee {
+  background-color: #f06c64;
+  color: #fff;
+}
+
+.back-to-products-button {
+  display: inline-block;
+  background-color: #fff;
+  border: 2px solid #d13434;
+  border-radius: 5px;
+  color: #d13434;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.back-to-products-button:hover {
+  background-color: #d13434;
+  color: #fff;
+}
